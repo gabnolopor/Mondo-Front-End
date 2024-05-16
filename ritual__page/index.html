@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" type="image/png" href="recursos/MONDO.jpg">
+    <title>MONDO</title>
+    <script type="text/javascript" src="../script/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <!-- Title-- te lleva al index -->
+        <h1 class="header__title"><a href="../index.html" title="inicio" target="_self" class="header__titleLink">MONDO</a></h1>
+        <!-- Header Image -->
+        <img src="../recursos/loto.png" alt="flor_loto" class="header__image">
+        <!-- Navigation Links-- te llevan al html correspndiente -->
+        <ul class="header__links">
+            <li class="header__linksLink">
+                <a href="../index.html" title="inicio" target="_self" class="link">Inicio</a>
+            </li>
+            <li class="header__linksLink">
+                <a href="../masajes__page/index.html" title="masajes" target="_self" class="link" target="_self">Masajes</a>
+            </li>
+            <li class="header__linksLink">
+                <a href="index.html" target="_self" title="rituales" class="link uppercase">Rituales</a>
+            </li>
+            <li class="header__linksLink">
+                <a href="../contact__page/index.html" title="contacto" target="_self" class="link">Contacto</a>
+            </li>
+        </ul>
+    </header>
+
+
+
+<main>
+
+    <section class="mainCarousel">
+
+    <!-- Main Carousel -->
+    <div class="container__carousel">
+
+
+        <!-- Main Carousel-- Dentro del div container__carousel
+        creo un div mas donde ira el carousel en cuestion-->
+        <div class="carousel" id="slider">
+
+            <!-- Main Carousel-- Dentro creo las sections donde ira
+            la imagen del carousel y su texto asi como el boton que
+            te redirige a la parte del html donde se ecnuetre mas info
+            del servicio presentado -->
+            <section class="slider__section">
+                <h2 class="slider__title">Chocolaterapia Corporal</h2>
+                <img src="../recursos/chocolate.jpg" alt="Chocolaterapia Corporal">
+                <button type="button" title="chocolaterapia" class="slider__info"> <a href="#chocolate" title="chocolaterapia" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Elixir Piel de Seda</h2>
+                <img src="../recursos/silk.jpg" alt="Elixir Piel de Seda">
+                <button type="button" title="elixir piel de seda" class="slider__info"> <a href="#silk" title="elixir piel de seda" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Ritual Totonaco</h2>
+                <img src="../recursos/totonaco.jpg" alt="Ritual Totonaco">
+                <button type="button" title="totonaco" class="slider__info"> <a href="#totonaco" title="ritual totonaco" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Cielo-Tierra</h2>
+                <img src="../recursos/sky.jpg" alt="Cielo-Tierra">
+                <button type="button" title="cielo-tierra" class="slider__info"> <a href="#sky" title="cielo-tierra" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Barro del Mar Muerto</h2>
+                <img src="../recursos/mud.jpg" alt="Barro del Mar Muerto">
+                <button type="button" title="barro del mar muerto" class="slider__info"> <a href="#mud" title="barro del mar muerto" class="carouselLink">Mas Información</a> </button>
+            </section>
+        </div>
+
+        <!-- Main Carousel-- Creo los botones con los que le dare movimiento izq. o der.
+        a las imagenes del slider -->
+        <div class="btn__left"><i class='fa-solid fa-angle-left'></i></div>
+        <div class="btn__right"><i class='fa-solid fa-angle-right'></i></div>
+    </div>
+    </section>  
+
+    <!-- Massages Names-- En esta seccion expongo los tipos de masajes y la info correspondiente a estos-->
+    <section class="mainRituals">
+    <div class="container__rituals">
+        <section class="rituals__section" id="chocolate">
+            <h2 class="ritual__title">Chocolaterapia Corporal</h2>
+            <p class="ritual__text">El cacao es una gran fuente de hidratación para la piel, beneficioso para la circulación, tonificación, sensación de bienestar y para el cerebro por la función neuroprotectora que llevan a cabo los flavonoides ; y lo mejor de este ritual es que es muy relajante y con ello reduce el estrés y la ansiedad.
+                El ritual de chocolaterapia consiste en una exfoliación revitalizante con elementos naturales, seguida de una envoltura corporal- nutriente de cacao con mantecas naturales y ácido hialurónico, concluyendo con un maravilloso masaje relajante con aceites esenciales.
+            <br>
+            <span class="ritual__prices">
+            90 min. Individual 45€ · Pareja 80€
+            </span>
+            </p>
+            <img src="../recursos/chocolate.jpg" alt="Chocolaterapia Corporal" loading="lazy">
+            <!-- Modified WhatsApp link for regular WhatsApp -->
+            <button type="button" title="reservar" class="ritual__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20chocolaterapia." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <!-- Similar modifications for other sections -->
+        <!-- Elixir Piel de Seda -->
+        <section class="rituals__section" id="silk">
+            <h2 class="ritual__title">Elixir Piel de Seda</h2>
+            <p class="ritual__text">Sus propiedades desintoxicantes y suavizantes para la piel hacen de este ritual corporal un tratamiento ideal para mimar todo el cuerpo. Reduce la apariencia de celulitis, estimula el sistema linfático y proporciona una hidratación intensa a la piel, siendo ideal para después de días en la playa, antes de algún evento especial o simplemente porque te lo mereces. 
+                Además, reducen el estrés y la ansiedad, ya que conducen a la completa relajación del cuerpo y su musculatura, por lo que a sus beneficios estéticos debemos añadirle también sus atributos relajantes.               
+            <br>
+            <span class="ritual__prices">
+            90 min. 55€
+            </span>
+            </p>
+            <img src="../recursos/silk.jpg" alt="Elixir Piel de Seda" loading="lazy">
+            <button type="button" title="reservar" class="ritual__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20elixir%20piel%20de%20seda." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <!-- Similar modifications for other sections -->
+        <!-- Ritual Totonaco -->
+        <section class="rituals__section" id="totonaco">
+            <h2 class="ritual__title">Ritual Totonaco</h2>
+            <p class="ritual__text">Desde el Totonacapan, México; región de gran riqueza cultural y rituales milenarios destinados al cuidado y purificación del cuerpo para que el bienestar físico se encuentre en armonía con el equilibrio espiritual. Tenemos para ti el mejor ritual para renovar la energía.
+                Se aromatiza y prepara el cuerpo con ramilletes de hierbas aromáticas que generan sensación de bienestar y equilibrio. Exfoliación con guante de ixtle e hidrolato floral orgánico de lavanda o manzanilla. Masaje relajante de cuerpo completo con semillas de entada calientes que general una sensación de bienestar y ayudan a potenciar una experiencia relajante y sensorial. Incluye aromaterapia con aceites esenciales.            
+            <br>
+            <span class="ritual__prices">
+            90 min. Individual 55€ · Pareja 80€
+            </span>
+            </p>
+            <img src="../recursos/totonaco.jpg" alt="Totonaco" loading="lazy">
+            <button type="button" title="reservar" class="ritual__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20ritual%20totonaco." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <!-- Similar modifications for other sections -->
+        <!-- Cielo-Tierra -->
+        <section class="rituals__section" id="sky">
+            <h2 class="ritual__title">Cielo-Tierra</h2>
+            <p class="ritual__text">A través de un delicado masaje craneo-facial  (cielo) y reflexologia podal (tierra) lograrás equilibrar mente y cuerpo. Apropiada para todo tipo de personas que quieran aliviar sus tensiones y armonizar su cuerpo. 
+                Masaje relajante y delicado que te hará transportarte a otros lugares maravillosos.               
+            <br>
+            <span class="ritual__prices">
+            60 min. 45€
+            </span>
+            </p>
+            <img src="../recursos/sky.jpg" alt="Cielo-Tierra" loading="lazy">
+            <button type="button" title="reservar" class="ritual__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20cielo%20y%20tierra." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <!-- Similar modifications for other sections -->
+        <!-- Barro del Mar Muerto -->
+        <section class="rituals__section" id="mud">
+            <h2 class="ritual__title">Barro del Mar Muerto</h2>
+            <p class="ritual__text">El barro del Mar Muerto, conocido por sus propiedades, nutre tu piel con minerales esenciales que revitalizan, purifican y restauran. Este ritual no solo mejora la textura de la piel, sino que también deja una sensación duradera de suavidad y luminosidad.
+                Esta es una oportunidad para el autocuidado, proporcionándote un escape rejuvenecedor del estrés diario.
+            <br>
+            <span class="ritual__prices">
+                90 min. 55€
+                </span>
+            </p>
+            <img src="../recursos/mud.jpg" alt="Masaje Maderoterapia" loading="lazy">
+            <button type="button" title="reservar" class="ritual__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20barro%20del%20mar%20muerto." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+    </div>
+    </section>
+
+</main>
+
+<!-- Footer List-- El footer es igual al del index pero con la omdificacion del
+texto que indica en que pagina se está, en este caso MASAJES -->
+<footer>
+    <div class="footer">
+
+      <!-- Footer List -->
+      <div class="footerText">
+        <ul class="footerList">
+          <li class="footerList__element"><a href="../index.html" title="inicio" target="_self" class="link">Inicio</a></li>
+          <li class="footerList__element"><a href="../masajes__page/index.html" title="masajes" target="_self" class="link">Masajes</a></li>
+          <li class="footerList__element"><a href="index.html" title="rituales" target="_self" class="link uppercase">Rituales</a></li>
+          <li class="footerList__element"> <a href="../contact__page/index.html" title="contacto" target="_self" class="link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Logo -->
+      <h2 class="footerLogo">
+        <a href="../index.html" target="_self" title="inicio" class="footerLogo__link">MONDO</a>
+      </h2>
+
+      <!-- Footer Rithts -->
+        <p class="footerRights">
+          &copy; 2024 MONDO All rights reserved
+        </p>
+    </div>
+
+
+</footer>
+</body>
+</html>

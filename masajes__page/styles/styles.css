@@ -1,0 +1,399 @@
+@font-face {
+    font-family: MONDO;
+    src: url(../../recursos/bodoni_lectura.ttf);
+}
+
+@font-face {
+    font-family: MONDOALT;
+    src: url(../../recursos/bodoni.ttf);
+}
+
+@font-face {
+    font-family: KARLA;
+    src: url(../../recursos/karla.ttf);
+}
+
+:root {
+    --mondo-logo: #DFDAEE;
+    --mondo-logoSoft: #dfdaee9e;
+    --malva-page: #B898B0;
+    --shadow-boxBig: 0 0 1rem rgba(0, 0, 0, 0.551);
+    --shadow-box: 0 0 0.5rem rgba(0, 0, 0, 0.551);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+}
+
+/* Header-- hago aparecer la imagen del loto */
+
+h1:hover + .header__image {
+    opacity: 1;
+}
+
+.header__title {
+    cursor: pointer;
+    font-family: BODONI;
+    font-weight: bolder;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 0;
+    padding: 1.5rem 0.5rem;
+}
+.header__titleLink{
+    text-decoration: none;
+    color: black;
+}
+.header__image {
+    height: 4.5rem;
+    position: absolute;
+    margin: 0 2rem;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.header__links {
+    display: flex;
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+.header__linksLink {
+    margin: 0 1rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.link:hover {
+    font-size: large;
+    color: var(--malva-page);
+}
+
+/* Main Carousel */
+
+.mainCarousel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--mondo-logo);
+    padding: 1.25rem; 
+}
+
+.container__carousel {
+    position: relative;
+    width: 50rem;
+    height: 28rem;
+    background: none;
+    box-shadow: var(--shadow-box);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.carousel {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+
+.slider__section {
+    display: flex;
+    text-align: justify;
+    align-items: end; 
+    justify-content: start;
+    width: calc(100% / 7);
+    height: 100%;
+}
+.slider__title{
+    position: absolute; 
+    font-family: KARLA;    
+    text-transform: uppercase;
+    margin: 4rem 3rem;
+    padding: 0.5rem;
+    font-size: xx-large;
+    background-color: var(--mondo-logoSoft);
+}
+
+.slider__section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.slider__info{
+    position: absolute;
+    margin: 1rem 3rem;
+    font-family: KARLA;
+    background-color: var(--mondo-logoSoft);
+    border: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: var(--shadow-box);
+}
+.slider__info:hover{
+    transform: scale(1.1);
+    background-color: var(--mondo-logo);
+ 
+}
+.btn__left,
+.btn__right {
+    display: flex;
+    align-items: center;
+    height: 1rem;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--mondo-logo);
+    transform: translate(0,-50%);
+    transition: 1s ease;
+}
+
+.btn__left:hover,
+.btn__right:hover {
+    background-color: var(--malva-page);
+    height: 1.5rem;
+}
+
+.btn__left {
+    left: .625rem;
+}
+
+.btn__right {
+    right: .625rem;
+}
+.carouselLink{
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Massages Info Section-- en esta seccion agrego los hero images de los
+servicios que se ofrecen asi como mas informacion al respecto*/
+
+.container__massages{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.massages__section{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.massages__section img {
+    width: 60%;
+}
+.massage__title{
+    position: absolute; 
+    font-family: KARLA;    
+    text-transform: uppercase;
+    margin: 0 3rem;
+    padding: 0.5rem;
+    top: 0;
+    font-size: xx-large;
+    background-color: var(--mondo-logoSoft);
+}
+.massage__text{
+    position: absolute;
+    font-family: KARLA;
+    margin: 0 3rem;
+    padding: 0.5rem;
+    bottom: 12%;
+    width: 55%;
+    background-color: var(--mondo-logoSoft);
+    font-size: 1.2rem;
+}
+.massage__reserve{
+    position: absolute;
+    margin: 1rem 3rem;
+    bottom: 0;
+    font-family: KARLA;
+    background-color: var(--mondo-logoSoft);
+    border: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: var(--shadow-box);
+}
+.massage__prices{
+    font-weight: bold;
+    line-height: 2rem;
+}
+.massage__reserve:hover{
+    transform: scale(1.1);
+    background-color: var(--mondo-logo);
+ 
+}
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: var(--mondo-logo);
+}
+.footerList{
+    display: flex;
+    list-style: none;
+    font-family: KARLA;
+}
+.footerList__element{
+    margin: 0 1rem;
+}
+.footerList__element:hover{
+    font-size: large;
+}
+
+.footerLogo{
+    font-family: MONDO;
+    transition: 0.5s;
+}
+.footerLogo__link{
+    text-decoration: none;
+    color: black;
+}
+
+.footerLogo:hover{
+    font-size: 1.6rem;
+}
+.footerRights{
+    font-family: KARLA;
+    margin: 0 2rem;
+}
+
+/* Designs Holder */
+
+/* Class Link Design-- diseño el formato de los elementos con esta clase */
+.link {
+    text-decoration: none;
+    color: black;
+    font-family: KARLA;
+    transition: 0.5s;
+}
+.linkStatic{
+    text-decoration: none;
+    color: black;
+    font-family: KARLA;
+}
+/* Class Inicio Design-- diseño el formato de los elementos con esta clase */
+.uppercase{
+    color: var(--malva-page);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* Header Responsive */
+    .header{
+        flex-direction: column;
+    }
+
+    .header__image {
+        display: none;
+    }
+
+  
+    .header__links {
+        margin: 4rem 0 0 0;
+        padding: 0;
+    }
+
+    .header__linksLink {
+        font-size: large;
+        margin: 0;
+        padding: 0 3rem;
+    }
+    /* Massages Info */
+
+    .massage__title{
+        font-size: 1.5rem;
+        height:auto;
+        position:relative;
+        width: 70%;
+
+    }
+    .massage__text{
+        font-size: 1rem;
+        position:relative;
+        width: 70%;
+    }
+    .massage__prices{
+        line-height: 1rem;
+    }
+    /* Footer Responsive */
+    .footer{
+        font-size: 1rem;
+    }
+    .footerList{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .footerList__element{
+            padding: 0;
+            margin: 0.5rem;
+    }
+        .footerLogo{
+            margin: 0 1rem;
+    }
+        .footerRights{
+            margin: 0 1rem;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .header__image {
+        height: 3rem;
+        margin: 0.6rem 0;
+    }
+
+    .header__title {
+        font-size: 1.8rem;
+    }
+    .header__links {
+        margin: 0;
+   
+    }
+    .header__linksLink {
+        font-size: large;
+        padding: 0.5rem;
+    }
+    .slider__info{
+        margin: 1rem;
+    }
+    .slider__title{
+        font-size: 1rem;
+        margin: 4rem 1rem;
+    }
+    .footer{
+        font-size: 0.8rem;
+    }
+}

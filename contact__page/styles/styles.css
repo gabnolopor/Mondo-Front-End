@@ -1,0 +1,307 @@
+@font-face {
+    font-family: MONDO;
+    src: url(../../recursos/bodoni_lectura.ttf);
+}
+
+@font-face {
+    font-family: MONDOALT;
+    src: url(../../recursos/bodoni.ttf);
+}
+
+@font-face {
+    font-family: KARLA;
+    src: url(../../recursos/karla.ttf);
+}
+
+:root {
+    --mondo-logo: #DFDAEE;
+    --malva-page: #B898B0;
+    --shadow-boxBig: 0 0 1rem rgba(0, 0, 0, 0.551);
+    --shadow-box: 0 0 0.5rem rgba(0, 0, 0, 0.551);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+}
+
+/* Header-- hago aparecer la imagen del loto */
+
+h1:hover + .header__image {
+    opacity: 1;
+}
+
+.header__title {
+    cursor: pointer;
+    font-family: BODONI;
+    font-weight: bolder;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 0;
+    padding: 1.5rem 0.5rem;
+}
+.header__titleLink{
+    text-decoration: none;
+    color: black;
+}
+.header__image {
+    height: 4.5rem;
+    position: absolute;
+    margin: 0 2rem;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.header__links {
+    display: flex;
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+.header__linksLink {
+    margin: 0 1rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.link:hover {
+    font-size: large;
+    color: var(--malva-page);
+}
+
+/* Main Contact Page */
+.contact{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--mondo-logo);
+}
+.contactData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 0 5rem;
+    font-family: KARLA;
+}
+.contactData__title{
+    font-family: MONDO;
+}
+.contactData__text{
+    line-height: 1.5rem;
+}
+.contactData__mapTitle{
+    font-family: KARLA;
+}
+.contactData__map{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5rem;
+
+}
+.contactData__mapMap{
+    box-shadow: var(--shadow-box);
+}
+/* Main Social Page */
+
+.contactSocial__logos{
+    height: 50vh;
+    width: 100vw;
+}
+.contactSocial__networks{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.logo{
+    font-size: 5rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contactSocial__networksLink{
+    text-decoration: none;
+    color: black;
+}
+/* Le doy efecto hover a los logos de las redes sociales por motivos 
+esteticos */
+.logo:hover{
+    font-size: 6rem;
+    background-color: var(--mondo-logo);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    color: white;
+
+}
+.whatsapp:hover{
+    background-color: green;
+}
+.instagram:hover{
+    background-image: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+.facebook:hover{
+    background-color: blue;
+}
+.google:hover{
+    background-image: linear-gradient(90deg, #4285f4, #34a853, #fbbc05, #ea4335);
+
+}
+
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: var(--mondo-logo);
+}
+.footerList{
+    display: flex;
+    list-style: none;
+    font-family: KARLA;
+}
+.footerList__element{
+    margin: 0 1rem;
+}
+.footerList__element:hover{
+    font-size: large;
+}
+
+.footerLogo{
+    font-family: MONDO;
+    transition: 0.5s;
+}
+.footerLogo__link{
+    text-decoration: none;
+    color: black;
+}
+
+.footerLogo:hover{
+    font-size: 1.6rem;
+}
+.footerRights{
+    font-family: KARLA;
+    margin: 0 2rem;
+}
+
+/* Designs Holder */
+
+/* Class Link Design-- diseño el formato de los elementos con esta clase */
+.link {
+    text-decoration: none;
+    color: black;
+    font-family: KARLA;
+    transition: 0.5s;
+}
+
+/* Class Inicio Design-- diseño el formato de los elementos con esta clase */
+.uppercase{
+    color: var(--malva-page);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+
+    /* Header Responsive */
+    .header {
+        flex-direction: column;
+    }
+
+    .header__image {
+        display: none;
+    }
+
+    .header__title {
+        display: none;
+    }
+
+    .header__links {
+        margin: 4rem 0 0 0;
+        padding: 0;
+    }
+
+    .header__linksLink {
+        font-size: large;
+        margin: 0;
+        padding: 0 3rem;
+    }
+/* Main Responsive */
+    .contact{
+        flex-direction: column;
+        height: auto;
+    }
+    .contactData{
+        margin: 10rem 3rem 0 3rem;
+    }
+    .contactSocial__logos{
+        height: 18rem;
+    }
+    
+    /* Footer Responsive */
+    .footer{
+        font-size: 1rem;
+    }
+    .footerList{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .footerList__element{
+        padding: 0;
+        margin: 0.5rem;
+    }
+    .footerLogo{
+        margin: 0 1rem;
+    }
+    .footerRights{
+        margin: 0 1rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header__image {
+        height: 3rem;
+        margin: 0.6rem 0;
+    }
+
+    .header__title {
+        font-size: 1.8rem;
+    }
+    .header__links {
+        margin: 4rem 0 0 0;
+   
+    }
+    .header__linksLink {
+        font-size: large;
+        padding: 0.5rem;
+    }
+    .contact{
+        height: auto;
+    }
+    .contactData__mapMap{
+        width: 100%;
+        
+    }
+    .footer{
+        font-size: 0.8rem;
+    }
+}

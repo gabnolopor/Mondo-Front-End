@@ -1,0 +1,477 @@
+@font-face {
+    font-family: MONDO;
+    src: url(../recursos/bodoni_lectura.ttf);
+}
+
+@font-face {
+    font-family: MONDOALT;
+    src: url(../recursos/bodoni.ttf);
+}
+
+@font-face {
+    font-family: KARLA;
+    src: url(../recursos/karla.ttf);
+}
+
+:root {
+    --mondo-logo: #DFDAEE;
+    --malva-page: #B898B0;
+    --shadow-boxBig: 0 0 1rem rgba(0, 0, 0, 0.551);
+    --shadow-box: 0 0 0.5rem rgba(0, 0, 0, 0.551);
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+}
+
+/* Header-- hago aparecer la imagen del loto */
+
+h1:hover + .header__image {
+    opacity: 1;
+}
+
+.header__title {
+    cursor: pointer;
+    font-family: BODONI;
+    font-weight: bolder;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 0;
+    padding: 1.5rem 0.5rem;
+}
+.header__titleLink{
+    text-decoration: none;
+    color: black;
+}
+.header__image {
+    height: 4.5rem;
+    position: absolute;
+    margin: 0 2rem;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.header__links {
+    display: flex;
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+.header__linksLink {
+    margin: 0 1rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.link:hover {
+    font-size: large;
+    color: var(--malva-page);
+}
+
+/* Main */
+.mainBg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../recursos/mondoB.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 49%;
+    background-color: var(--mondo-logo);
+}
+
+/* Cards */
+.cards {
+    height: 100vh;
+}
+
+.mainCards__title {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mainCards__titleText {
+    margin: 3rem 0 0 0;
+    font-family: KARLA;
+    font-weight: 300;
+    font-size: xx-large;
+    border-bottom: 0.2rem solid var(--mondo-logo);
+}
+
+
+.mainCards__link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainCards {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+}
+
+.mainCards__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    height: 75%;
+    margin: 3rem 5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: var(--shadow-box);
+    transition: 0.8s ease;
+    color: var(--mondo-logo);
+    cursor: pointer;
+}
+
+.bg1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(../recursos/massage_hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(../recursos/ritual_hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card__title {
+    font-family: KARLA;
+    font-size: xx-large;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card__text {
+    font-family: KARLA;
+    font-size: large;
+}
+
+.mainCards__card:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-boxBig);
+}
+
+/* Main - About Us Section */
+.mainAbout {
+    height: 76vh;
+    background-color: var(--mondo-logo);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.mainAbout__image {
+    height: 100%;
+}
+
+.mainAbout__imageValue {
+    height: 100%;
+}
+
+.mainAbout__content {
+    width: 27%;
+    margin: 0 5rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: KARLA;
+    border: 0.5rem transparent black;
+    border-radius: 0.5rem;
+}
+
+.mainAbout__title {
+    border-bottom: 0.1rem solid black;
+    text-transform: uppercase;
+    margin: 0 0 2rem 0;
+}
+
+.mainAbout__text {
+    margin: 0.5rem;
+}
+
+/* Main - Find Us Section */
+.mainFind{
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plantsA{
+    position: absolute;
+    width: 38rem;
+    right: -13rem;
+    margin: 0 0 26rem 0;
+}
+.plantsB{
+    position: absolute;
+    width: 33rem;
+    left: 0;
+    margin: 10rem 0 0 0;
+    padding: 0;
+}
+.mainFind__map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: KARLA;
+}
+.mainFind__title{
+    margin: 0 0 3rem 0;
+    border-bottom: 0.2rem solid var(--mondo-logo);
+}
+.mainFind__mapLink{
+    box-shadow: var(--shadow-box);
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: var(--mondo-logo);
+}
+.footerList{
+    display: flex;
+    list-style: none;
+    font-family: KARLA;
+}
+.footerList__element{
+    margin: 0 1rem;
+}
+.footerList__element:hover{
+    font-size: large;
+}
+
+.footerLogo{
+    font-family: MONDO;
+    transition: 0.5s;
+}
+.footerLogo__link{
+    text-decoration: none;
+    color: black;
+}
+
+.footerLogo:hover{
+    font-size: 1.6rem;
+}
+.footerRights{
+    font-family: KARLA;
+    margin: 0 2rem;
+}
+
+/* Designs Holder */
+
+/* Class Link Design-- diseño el formato de los elementos con esta clase */
+.link {
+    text-decoration: none;
+    color: black;
+    font-family: KARLA;
+    transition: 0.5s;
+}
+
+/* Class Inicio Design-- diseño el formato de los elementos con esta clase */
+.uppercase{
+    color: var(--malva-page);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+
+    /* Header Responsive */
+    .header,
+    .mainCards {
+        flex-direction: column;
+    }
+
+    .header__image {
+        display: none;
+    }
+
+    .header__title {
+        display: none;
+    }
+
+    .header__links {
+        margin: 4rem 0 0 0;
+        padding: 0;
+    }
+
+    .header__linksLink {
+        font-size: large;
+        margin: 0;
+        padding: 0 3rem;
+    }
+    .mainCards{
+        margin: 0;
+        
+    }
+
+    .mainCards__card {
+        margin: 3rem 1rem;
+        width: 65%;
+        height: 75%;
+        align-items: center;
+    }
+
+    /* Main Responsive */
+    .mainAbout {
+        flex-direction: column;
+        justify-content: start;
+        height: 75vh;
+
+    }
+
+    .mainAbout__image {
+        height: 40vh;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .mainAbout__content {
+        width: 75%;
+        margin: 0;
+    }
+
+    /* Map Section Responsive */
+    .plantsA{
+        display: none;               
+          }
+    .plantsB{
+        display: none;
+          }
+    .mainFind{
+        height: 75vh;
+    }
+    .mainFind__title{
+        border-bottom: none;
+        margin: 2rem 0;
+        font-size: 1.8rem;
+    }
+    .mainFind__mapLink{
+        margin: 0 0 5rem 0;
+    }
+
+    /* Footer Responsive */
+    .footer{
+        font-size: 1rem;
+    }
+    .footerList{
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .footerList__element{
+        padding: 0;
+        margin: 0.5rem;
+    }
+    .footerLogo{
+        margin: 0 1rem;
+    }
+    .footerRights{
+        margin: 0 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .header__image {
+        height: 3rem;
+        margin: 0.6rem 0;
+    }
+
+    .header__title {
+        font-size: 1.8rem;
+    }
+    .header__links {
+        margin: 4rem 0 0 0;
+   
+    }
+    .header__linksLink {
+        font-size: large;
+        padding: 0.5rem;
+    }
+    .mainCards__titleText{
+        border-bottom: none;
+        margin: 0 0 1rem 0;
+    }
+    .mainCards__link{
+        align-items: normal;
+    }
+
+    .mainCards__card {
+        margin: 1rem;
+        width: 70%;
+        height: 65%;
+    }
+
+    .card__title, .card__text{
+        font-size: 0.8rem;
+    }
+
+    .mainAbout{
+        height: 85vh;
+       }
+
+    .mainAbout__title{
+        margin: 0 0 0.5rem 0;
+    }
+
+    .mainAbout__content {
+        margin: 0;
+        height: 20rem;
+        padding: 0;
+        font-size: 0.8rem;
+    }
+    .mainFind{
+        height: 80vh;
+    }
+    .mainFind__mapLink{
+        width: 100%;
+        margin: 0 0 5rem 0;
+    }
+    .footer{
+            font-size: 0.8rem;
+        }
+}
+

@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" type="image/png" href="recursos/MONDO.jpg">
+    <title>MONDO</title>
+    <script type="text/javascript" src="../script/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <!-- Title-- te lleva al index -->
+        <h1 class="header__title"><a href="../index.html" target="_self" title="inicio" class="header__titleLink">MONDO</a></h1>
+        <!-- Header Image -->
+        <img src="../recursos/loto.png" alt="flor_loto" class="header__image">
+        <!-- Navigation Links-- te llevan al html correspndiente -->
+        <ul class="header__links">
+            <li class="header__linksLink">
+                <a href="../index.html" target="_self" title="inicio" class="link">Inicio</a>
+            </li>
+            <li class="header__linksLink">
+                <a href="index.html" target="_self" title="masajes" class="link uppercase">Masajes</a>
+            </li>
+            <li class="header__linksLink">
+                <a href="../ritual__page/index.html" title="rituales" target="_self" class="link">Rituales</a>
+            </li>
+            <li class="header__linksLink">
+                <a href="../contact__page/index.html" title="contacto" target="_self" class="link">Contacto</a>
+            </li>
+        </ul>
+    </header>
+
+
+
+<main>
+
+    <section class="mainCarousel">
+
+    <!-- Main Carousel -->
+    <div class="container__carousel">
+
+
+        <!-- Main Carousel-- Dentro del div container__carousel
+        creo un div mas donde ira el carousel en cuestion-->
+        <div class="carousel" id="slider">
+
+            <!-- Main Carousel-- Dentro creo las sections donde ira
+            la imagen del carousel y su texto asi como el boton que
+            te redirige a la parte del html donde se ecnuetre mas info
+            del servicio presentado -->
+            <section class="slider__section">
+                <h2 class="slider__title">Masaje Relajante</h2>
+                <img src="../recursos/massage_hero.jpg" alt="Masaje Relajante">
+                <button type="button" title="masaje relajante" class="slider__info"> <a href="#relax" title="masaje relajante" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Masaje Descontracturante</h2>
+                <img src="../recursos/descontracturante_hero.jpg" alt="Masaje Descontracturante">
+                <button type="button" title="masaje Descontracturante" class="slider__info"> <a href="#decontracting" title="masaje Descontracturante" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Masaje Facial, Kobido, Gua Sha</h2>
+                <img src="../recursos/facial_hero.jpg" alt="Masaje Facial">
+                <button type="button" title="masaje facial" class="slider__info"> <a href="#facial" title="masaje facial" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Masaje Anticelulítico, <br>Reductivo y Reafirmante</h2>
+                <img src="../recursos/anticelulitico_hero.jpg" alt="Masaje Anticelulitico">
+                <button type="button" title="masaje Anticelulitico" class="slider__info"> <a href="#anticellulite" title="masaje anticelulíticos" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Maderoterapia corporal</h2>
+                <img src="../recursos/maderoterapia_hero.jpg" alt="Masaje Maderoterapia">
+                <button type="button" title="maderoterapia" class="slider__info"> <a href="#wood" title="maderoterapia" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Masaje con Pindas</h2>
+                <img src="../recursos/pindas_hero.jpg" alt="Masaje Pindas">
+                <button type="button" title="masaje con pindas" class="slider__info"> <a href="#pindas" title="masaje con pindas" class="carouselLink">Mas Información</a> </button>
+            </section>
+            <section class="slider__section">
+                <h2 class="slider__title">Masaje con Piedras Frías o <br>Calientes</h2>
+                <img src="../recursos/piedras_hero.jpg" alt="Masaje Piedras">
+                <button type="button" title="masaje con piedras" class="slider__info"> <a href="#stones" title="masaje de pideras" class="carouselLink">Mas Información</a> </button>
+            </section>
+        </div>
+
+        <!-- Main Carousel-- Creo los botones con los que le dare movimiento izq. o der.
+        a las imagenes del slider -->
+        <div class="btn__left"><i class='fa-solid fa-angle-left'></i></div>
+        <div class="btn__right"><i class='fa-solid fa-angle-right'></i></div>
+    </div>
+    </section>  
+
+    <!--Massages Names-- En esta seccion expongo los tipos de masajes y la info correspondiente a estos-->
+    <section class="mainMassages">
+    <div class="container__massages">
+        <section class="massages__section" id="relax">
+            <h2 class="massage__title">Masaje Relajante</h2>
+            <p class="massage__text">Es un masaje suave con manipulaciones envolventes, movimientos lentos, reiterativos y superficiales.
+                Otorga beneficios al drenaje linfático y sistema inmune además de disminuir la ligera tensión muscular, deja una sensación de bienestar y relajación total.
+                Previene que los niveles de estrés lleguen a niveles patológicos.
+            <br>
+            <span class="massage__prices">
+            60 min. Individual 30€ · Pareja 55€
+            <br>
+            90 min. Individual 50€ · Pareja 95€
+            </span>
+            </p>
+            <img src="../recursos/massage_hero.jpg" alt="Masaje Relajante" loading="lazy">
+            <button type="button" title="reservar" class="massage__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20masaje%20relajante." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <section class="massages__section" id="decontracting">
+            <h2 class="massage__title">Masaje Descontracturante</h2>
+            <p class="massage__text">Masaje enérgico con manipulaciones concentradas que relajan la musculatura a profundidad mediante puntos de presión
+                Provoca una sensación de dolor-alivio sobre puntos específicos de la musculatura, además ayuda al recambio de nutrientes y mejorando la contractibiilidad y tonicidad muscular.
+                Disuelve los puntos de tensión y dolor generados por exceso de estrés.                
+            <br>
+            <span class="massage__prices">
+            60 min. 35€
+            <br>
+            90 min. 60€
+            </span>
+            </p>
+            <img src="../recursos/descontracturante_hero.jpg" alt="Masaje Descontracturante" loading="lazy">
+            <button type="button" title="reservar" class="massage__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20masaje%20descontracturante." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <section class="massages__section" id="facial">
+            <h2 class="massage__title">Masaje Facial, Kobido, Gua Sha</h2>
+            <p class="massage__text">Masajes y protocolos faciales para mejorar la turgencia de la piel basados en técnicas de fricción, amasamiento,  percusión y digitopresión.
+                Dichas manipulaciones favorecen  la circulación y la irrigación sanguínea a la piel, nutriéndola y haciéndola lucir más brillante. 
+                Suaviza las líneas finas de expresión.    
+                Reduce significativamente los niveles de estrés.             
+            <br>
+            <span class="massage__prices">
+            60 min. €45
+            </span>
+            </p>
+            <img src="../recursos/facial_hero.jpg" alt="Masaje Facial" loading="lazy">
+            <button type="button" title="reservar" class="massage__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20masaje%20kobido." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <section class="massages__section" id="anticellulite">
+            <h2 class="massage__title">Masaje Anticelulítico, <br>Reductivo y Reafirmante</h2>
+            <p class="massage__text">Manipulaciones, rápidas, superficiales y profundas, basadas en fricciones, amasamientos y percusiones. 
+                Se trabaja sobre las zonas con mayor cantidad de grasa en el cuerpo. Aunado a una alimentación sana y actividad física se obtienen grandes resultados.               
+            <br>
+            <span class="massage__prices">
+            Sesión por Zona. 30€
+            </span>
+            </p>
+            <img src="../recursos/anticelulitico_hero.jpg" alt="Masaje Anticelulitico" loading="lazy">
+            <button type="button" title="reservar" class="massage__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20masaje%20anticelulítico." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <section class="massages__section" id="wood">
+            <h2 class="massage__title">Maderoterapia corporal</h2>
+            <p class="massage__text">Una alternativa al masaje manual para quienes buscan efectos reductores, anticelulíticos y tonificantes
+                Aunque también puede realizarse en sesiones para relajar y reducir el nivel de estrés, así como para tratar contracturas.               
+            <br>
+            <span class="massage__prices">
+                Sesión por Zona. 30€
+                </span>
+            </p>
+            <img src="../recursos/maderoterapia_hero.jpg" alt="Masaje Maderoterapia" loading="lazy">
+            <button type="button" title="reservar" class="massage__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20maderoterapia." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+
+        <section class="massages__section" id="pindas">
+            <h2 class="massage__title">Masaje con Pindas</h2>
+            <p class="massage__text">Combinación de movimientos fuertes y activos, combinándolos con movimientos ligeros y apacibles. 
+                Las pindas se componen de hierbas aromáticas mezcladas con aceites esenciales, que se introducen en una especie de pequeños sacos, mismos que se calientan con aceite de almendras y aromaterapia, para ser aplicados sobre la piel. Esto proporciona una sensación de bienestar y relajación para el que se quiera introducir en un nuevo mundo de sensaciones.               
+            <br>
+            <span class="massage__prices">
+            55 min. Individual 40€
+            </span>
+            </p>
+            <img src="../recursos/pindas_hero.jpg" alt="Masaje Pindas" loading="lazy">
+            <button type="button" title="reservar" class="massage__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20masaje%20con%20pindas." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+        <section class="massages__section" id="stones">
+            <h2 class="massage__title">Masaje con Piedras Frías o <br>Calientes</h2>
+            <p class="massage__text">Sesión geotermal masaje rehabilitador tradicional con la aplicación sobre la piel de piedras calientes a distintas temperaturas.
+                Relajación de músculos y articulaciones, elimina toxinas, mejora la circulación y el flujo de energía.
+            <br>
+            <span class="massage__prices">
+            50 min. 40€
+            </p>
+            <img src="../recursos/piedras_hero.jpg" alt="Masaje Piedras" loading="lazy">
+            <button type="button" title="reservar" class="massage__reserve"><a href="https://wa.me/34603132929?text=Hola,%20me%20gustaria%20reservar%20una%20cita%20de%20masaje%20con%20piedras%20calientes." class="linkStatic" title="reservar" target="_blank">Reservar</a></button>
+        </section>
+
+    </div>
+    </section>
+
+</main>
+
+<!-- Footer List-- El footer es igual al del index pero con la omdificacion del
+texto que indica en que pagina se está, en este caso MASAJES -->
+<footer>
+    <div class="footer">
+
+      <!-- Footer List -->
+      <div class="footerText">
+        <ul class="footerList">
+          <li class="footerList__element"><a href="../index.html" title="inicio" target="_self" class="link">Inicio</a></li>
+          <li class="footerList__element"><a href="index.html" title="masajes" target="_self" class="link uppercase">Masajes</a></li>
+          <li class="footerList__element"><a href="../ritual__page/index.html" title="rituales" target="_self" class="link">Rituales</a></li>
+          <li class="footerList__element"> <a href="../contact__page/index.html" title="contacto" target="_self" class="link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Logo -->
+      <h2 class="footerLogo">
+        <a href="../index.html" title="inicio" target="_self" class="footerLogo__link">MONDO</a>
+      </h2>
+
+      <!-- Footer Rithts -->
+        <p class="footerRights">
+          &copy; 2024 MONDO All rights reserved
+        </p>
+    </div>
+
+
+</footer>
+</body>
+</html>
